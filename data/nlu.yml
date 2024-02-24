@@ -1,0 +1,140 @@
+version: "3.1"
+
+
+nlu:
+  # tạo intent(ý định của người dùng ) cho các cuộc trò truyện mỗi intent xác định một mục đích của cuộc trò truyện đó
+  - intent: ask_what_to_eat
+  # examples là ví dụ các câu người dùng có thể hỏi để xác định sử dụng intent này 
+    examples: |
+      - Hôm nay ăn gì ?
+  - intent: greets
+    examples: |
+      - hi 
+      - Hello
+      - Hey 
+      - Are you there
+      - xin chào 
+      - chào 
+  - intent: information
+    examples: |
+      - Tên tôi là [Đạt](name)
+      - [Hiền](name)
+      - [Trường](name)
+      - [Ngân](name)
+      - [Liên](name)
+  
+  - intent: google_bye
+    examples: |
+      - bye
+      - Chào tạm biệt
+  # câu hỏi  mạng máy tính 
+  - intent: lich_su_mang_may_tinh 
+    examples: |
+      - lịch sử mạng máy tính
+      - lich su mang may tinh
+      - lịch sử mạng 
+
+  - intent: mo_hinh_tinh_toan_mang
+    examples: |
+      - mo hinh tinh toan mang
+      - mô hình tính toán mạng
+
+  - intent: mo_hinh_tinh_toan_mang_tap_trung
+    examples: |
+      - mo hinh tinh toan mang tap trung
+      - mô hình tính toán mạng tập trung
+      - tính toán mạng tập trung
+      - centralized computing
+
+  - intent: mo_hinh_tinh_toan_mang_phan_tan
+    examples: |
+      - mo hinh tinh toan mang phan tan
+      - mô hình tính toán mạng phân tán
+      - tính toán mạng phân tán
+      - distributed computing
+
+  - intent: mo_hinh_tinh_toan_mang_cong_tac
+    examples: |
+      - mo hinh tinh toan mang cộng tác
+      - mô hình tính toán mạng cộng tác
+      - tính toán mạng cộng tác
+      - collaborative computing
+
+  - intent: dinh_nghia_mang_may_tinh
+    examples: |
+      - định nghĩa mạng máy tính
+      - dinh nghia mang may tinh
+  
+  - intent: phan_loai_mang
+    examples: |
+      - phan loai mang may tinh
+      - phân loại mạng máy tính
+      - phân loại mạng
+  
+  - intent: mang_LAN
+    examples: |
+      - mạng LAN
+      - mang LAN
+  
+  - intent: mang_MAN
+    examples: |
+      - mạng MAN
+      - mang MAN
+  
+  - intent: mang_WAN
+    examples: |
+      - mạng WAN
+      - mang WAN
+  
+  - intent: mo_hinh_mang
+    examples: |
+      - mo hinh mang may tinh
+      - mô hình mạng
+      - mô hình mạng máy tính
+  
+  - intent: mang_hinh_sao
+    examples: |
+      - mang hinh sao
+      - mạng hình sao
+      - mạng  máy tính hình sao
+      - star network
+
+  - intent: mang_tuyen_tinh
+    examples: |
+      - mang tuyen tinh
+      - mạng tuyến tính
+      - mạng  máy tính tuyến tính
+      - bus network
+
+  - intent: mang_hinh_vong
+    examples: |
+      - mang hinh vong
+      - mạng hình vòng
+      - mạng  máy tính hình vòng
+      - ring network
+  
+  - intent: mang_ket_hop
+    examples: |
+      - mang ket hop
+      - mạng kết hợp
+      - mạng  máy tính kết hợp
+      - mesh network
+  
+  - intent: phuong_phap_truyen_tin
+    examples: |
+      - phuong phap truyen tin
+      - phương pháp truyền tin
+      - phương pháp truyền thông tin mạng
+  
+  - intent: mang_chuyen_mach_kenh
+    examples: |
+      - mạng chuyển mạch kênh
+      - mang chuyen mach kenh
+  - intent: mang_chuyen_mach_goi
+    examples: |
+      - mạng chuyển mạch gọi
+      - mang chuyen mach goi
+  - intent: mang_chuyen_mach_thong_bao
+    examples: |
+      - mạng chuyển mạch thông báo
+      - mang chuyen mach thong bao

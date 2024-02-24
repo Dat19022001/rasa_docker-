@@ -1,0 +1,21 @@
+version: '3.0'
+services:
+  rasa:
+    image: rasa_pandas:latest
+    restart: always
+    user: root
+    ports:
+      - 5005:5005
+    volumes: 
+      - ./app:/app
+      - ./models:/app/models
+    command: "run --cors '*'"
+  action-server:
+    image: rasa_sdk_pd:latest
+    restart: always
+    volumes: 
+      - ./app/actions:/app/actions
+    ports: 
+      - 5055:5055
+ 
+ 

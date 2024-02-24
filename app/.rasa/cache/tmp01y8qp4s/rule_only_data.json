@@ -1,0 +1,7 @@
+{
+  "rule_only_slots": [],
+  "rule_only_loops": [
+    "mang_may_tinh_form",
+    "name_form"
+  ]
+}

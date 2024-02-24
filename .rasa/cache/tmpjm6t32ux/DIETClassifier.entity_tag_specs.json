@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-entity_mo_hinh_mang",
+      "2": "I-entity_mo_hinh_mang",
+      "3": "L-entity_mo_hinh_mang",
+      "4": "U-entity_mo_hinh_mang",
+      "5": "B-entity_phan_loai_mang",
+      "6": "I-entity_phan_loai_mang",
+      "7": "L-entity_phan_loai_mang",
+      "8": "U-entity_phan_loai_mang",
+      "9": "B-entity_phuong_phap_truyen_tin",
+      "10": "I-entity_phuong_phap_truyen_tin",
+      "11": "L-entity_phuong_phap_truyen_tin",
+      "12": "U-entity_phuong_phap_truyen_tin",
+      "13": "B-mo_hinh_tinh_toan_mang",
+      "14": "I-mo_hinh_tinh_toan_mang",
+      "15": "L-mo_hinh_tinh_toan_mang",
+      "16": "U-mo_hinh_tinh_toan_mang",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-entity_mo_hinh_mang": 1,
+      "I-entity_mo_hinh_mang": 2,
+      "L-entity_mo_hinh_mang": 3,
+      "U-entity_mo_hinh_mang": 4,
+      "B-entity_phan_loai_mang": 5,
+      "I-entity_phan_loai_mang": 6,
+      "L-entity_phan_loai_mang": 7,
+      "U-entity_phan_loai_mang": 8,
+      "B-entity_phuong_phap_truyen_tin": 9,
+      "I-entity_phuong_phap_truyen_tin": 10,
+      "L-entity_phuong_phap_truyen_tin": 11,
+      "U-entity_phuong_phap_truyen_tin": 12,
+      "B-mo_hinh_tinh_toan_mang": 13,
+      "I-mo_hinh_tinh_toan_mang": 14,
+      "L-mo_hinh_tinh_toan_mang": 15,
+      "U-mo_hinh_tinh_toan_mang": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

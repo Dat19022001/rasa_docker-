@@ -1,0 +1,22 @@
+{
+  "centralized computing": "mô hình tính toán mạng tập trung",
+  "mô hình tính toán mạng tập trung": "mô hình tính toán mạng tập trung",
+  "distributed computing": "mô hình tính toán mạng phân tán",
+  "mô hình tính toán mạng phân tán": "mô hình tính toán mạng phân tán",
+  "collaborative computing": "mô hình tính toán mạng cộng tác",
+  "mô hình tính toán mạng cộng tác": "mô hình tính toán mạng cộng tác",
+  "mạng lan": "mạng LAN",
+  "mạng man": "mạng MAN",
+  "mạng wan": "mạng WAN",
+  "mạng hình sao": "mạng hình sao",
+  "mạng tuyến tính": "mạng tuyến tính",
+  "mạng hình vòng": "mạng hình vòng",
+  "mạng kết hợp": "mạng kết hợp",
+  "star network": "star network",
+  "bus network": "bus network",
+  "ring network": "ring network",
+  "mesh network": "mesh network",
+  "mạng chuyển mạch kênh": "mạng chuyển mạch kênh",
+  "mạng chuyển mạch thông tin": "mạng chuyển mạch thông tin",
+  "mạng chuyển mạch gọi": "mạng chuyển mạch gọi"
+}

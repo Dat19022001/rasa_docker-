@@ -1,0 +1,90 @@
+version: "3.1"
+
+# đề cập đến các câu chuyện hoặc kịch bản mà bạn sử dụng để huấn luyện mô hình trò chuyện của bạn.
+# Các stories giúp mô hình hiểu cách người dùng có thể tương tác với ứng dụng của bạn trong các tình huống khác nhau.
+stories:
+  - story: eat
+    steps:
+      - intent: ask_what_to_eat
+      - action: action_what_to_eat
+  - story: xin chào
+    steps:
+      - intent: greets
+      - action: action_form_name 
+  - story: info
+    steps:
+      - intent: information
+      - action: action_create_User
+  - story: User wants to change name
+    steps:
+      - intent: change_name_yes
+      - action: action_change_name_yes
+  - story: User don't want to change name
+    steps:
+      - intent: change_name_no
+      - action: action_change_name_no
+  - story: Questions_computer
+    steps:
+      - intent:  lich_su_mang_may_tinh
+      - action: action_return_answers
+      
+      - intent:  mo_hinh_tinh_toan_mang
+      - action: action_return_answers
+      
+      - intent:  mo_hinh_tinh_toan_mang_tap_trung
+      - action: action_return_answers
+
+      - intent:  mo_hinh_tinh_toan_mang_phan_tan
+      - action: action_return_answers
+
+      - intent:  mo_hinh_tinh_toan_mang_cong_tac
+      - action: action_return_answers
+
+      - intent:  dinh_nghia_mang_may_tinh
+      - action: action_return_answers
+
+      - intent:  phan_loai_mang
+      - action: action_return_answers
+
+      - intent:  mang_LAN
+      - action: action_return_answers
+
+
+      - intent:  mang_MAN
+      - action: action_return_answers
+
+      - intent:  mang_WAN
+      - action: action_return_answers
+
+      - intent:  mo_hinh_mang
+      - action: action_return_answers
+
+      - intent:  mang_hinh_sao
+      - action: action_return_answers
+
+      - intent:  mang_tuyen_tinh
+      - action: action_return_answers
+
+      - intent:  mang_hinh_vong
+      - action: action_return_answers
+
+
+      - intent:  mang_ket_hop
+      - action: action_return_answers
+
+      - intent:  phuong_phap_truyen_tin
+      - action: action_return_answers
+
+      - intent:  mang_chuyen_mach_kenh
+      - action: action_return_answers
+
+      - intent:  mang_chuyen_mach_goi
+      - action: action_return_answers
+
+      - intent:  mang_chuyen_mach_thong_bao
+      - action: action_return_answers
+  
+  - story: Questions_age
+    steps:
+      - intent: age
+      - action: action_age

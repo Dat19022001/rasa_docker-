@@ -1,0 +1,77 @@
+version: "3.1"
+
+# Cung cấp các intent mà tạo bên file nlu.yml
+intents:
+  - ask_what_to_eat
+  - greets
+  - information
+  - change_name_yes
+  - change_name_no
+  - age
+
+# nêu các action được dùng các action này được tạo trong foder action
+actions:
+  - action_what_to_eat
+  - action_form_name
+  - action_create_User
+  - action_change_name_yes
+  - action_change_name_no
+  - action_return_answers
+  - action_age
+
+# "entities" (thực thể) đề cập đến các phần của dữ liệu đầu vào mà bạn muốn hệ thống nhận diện và xử lý. 
+# Cụ thể, entities thường là các thông tin cụ thể hoặc thực thể trong câu trò chuyện, như tên người, địa chỉ, thời gian, số lượng, v.v.
+entities: 
+  - name
+  - mang_may_tinh
+  - age
+
+# "slots" là các biến được sử dụng để lưu trữ và theo dõi thông tin trong quá trình trò chuyện. 
+# Các slots giúp lưu giữ trạng thái của cuộc trò chuyện và thông tin cụ thể được nhập từ người dùng.
+slots:
+  # tên các slot
+  user_name:
+    # kiểu dữ liệu 
+    type: text
+    mappings:
+    # Loại ánh xạ là "from_entity", điều này có nghĩa là giá trị của slot sẽ được lấy từ entity đã được trích xuất.
+    - type: from_entity
+    #  Chỉ định tên của entity mà bạn muốn sử dụng để điền giá trị của slot.
+      entity: name
+  slot_mang_may_tinh:
+    type: text
+    mappings: 
+    - type: from_entity
+      entity: mang_may_tinh
+  age:
+    type: text
+    mappings: 
+    - type: from_entity
+      entity: age
+
+
+# forms:
+#   name_form:
+#     required_slots:
+#       - user_name
+    
+# tạo các câu trả lời phù hợp với từng intent
+
+
+responses:
+  utter_greet:
+  - text: "Xin chào bạn tên gì vậy"
+  utter_bye:
+  - text: " Khi nào muốn hỏi thì gọi bot nha"
+  utter_ask_request:
+  - text: Bạn {user_name} muốn hỏi về thông tin gì?
+  utter_ask_name_form_user_name:
+  - text: "Xin chào bạn tên gì vậy"
+
+
+
+
+
+session_config:
+  session_expiration_time: 1
+  carry_over_slots_to_new_session: false
